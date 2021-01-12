@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Menu</title>
+        <script>
+        $(function () {
+        $(".header-placeholder").load("nav.html");
+      });
+      $(function () {
+        $(".footer-placeholder").load("footer.html");
+      });
+    </script>
+</head>
+<body>
+  <div class="flex-container">
+        <header>
+            <div class="header-placeholder"></div>
+        </header>
+        <section class="banner" id="banner">
+            <h1>Our Menu</h1>
+            <img src="./images/food.jpg" alt="">
+        </section>
+        <main>
+            <br>
+            <h2>Our <span>Appetizers</span></h2>
+            <hr class="menuHR">
+            <div class="row">
+                <div id="menu" class="col50">                    
+                    <h3>Rewena Bread: $10.00</h3>
+                    <h3>Paua Fritter: $16.00</h3>
+                    <h3>Raw Fish: $20.00</h3>
+                    <h3>Poached Salmon: $22.00</h3>
+                    <h3>Seafood Basket: $25.00</h3>
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img class="menuImg" src="./images/entree.jpg" alt="restaurant">
+                    </div>
+                </div>
+            </div>
+            <h2>Our <span>Mains</span></h2>
+            <hr class="menuHR">
+            <div class="row">
+                <div id="menu" class="col50">
+                        <h3>Fish of the Day: $25.00</h3>
+                        <h3>Mussels and Scallops: $25.00</h3>
+                        <h3>Seafood Chowder: $30.00</h3>
+                        <h3>Pork Belly: $30.00</h3>
+                        <h3>Lamb Steak: $33.00</h3>
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img class="menuImg" src="./images/main.jpg" alt="restaurant">
+                    </div>
+                </div>
+            </div>
+            <h2>Our <span>Desserts</span></h2>
+            <hr class="menuHR">
+            <div class="row">
+                <div id="menu" class="col50">
+                        <h3>Kapiti Ice Cream: 10.00</h3>
+                        <h3>Steam Pudding: $12.00</h3>
+                        <h3>Mini Pavlova: $16.00</h3>
+                        <h3>Banoffee Pie: $16.00</h3>
+                        <h3>Chocolate Mousse: $16.00</h3>
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img class="menuImg" src="./images/dessert.jpg" alt="restaurant">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2>Our <span>Drinks</span></h2>
+            <hr class="menuHR">
+            <div class="row">
+                <div id="menu" class="col50">
+                        <h3>Red Wine: $12.00
+                        </h3>
+                        <h3>White Wine: $12.00
+                        </h3>
+                        <h3>Beer and Cider: $11.00
+                        </h3>
+                        <h3>Cocktails: $15.00             
+                        </h3>
+                        <h3>Non-alchololic: $5.00             
+                        </h3>
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img class="menuImg" src="./images/drinks.jpg" alt="restaurant">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="btn" href="./reservations.html">Make a Reservation</a>
+            </div>
+        </main>
+    </div>  
+    <footer>
+        <div class="footer-placeholder"></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Hours</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(function () {
+        $(".header-placeholder").load("nav.html");
+      });
+      $(function () {
+        $(".footer-placeholder").load("footer.html");
+      });
+    </script>
+</head>
+<body>
+    <div class="flex-container">
+        <header>
+            <div class="header-placeholder"></div>
+        </header>
+        <section class="banner" id="banner">
+            <h1>Our Opening Hours</h1>
+            <img src="./images/resfood.jpeg" alt="restaurant food">
+        </section>
+        <main>
+            <div class="row" id="hoursCol">
+                    <h2>Haukai restaurant is open <span>5 days </span>a week</h2>
+                    <br>
+                    <p>Wednesday 5pm until late</p>
+                    <p>Thursday 5pm until late</p>
+                    <p>Friday 4pm until late</p>
+                    <p>Saturday 4pm until late</p>
+                    <p>Sunday 4pm until late</p>
+                <div class="calendar">
+                    <iframe  src="https://calendar.google.com/calendar/embed?src=haukairestaurant%40gmail.com&ctz=Pacific%2FAuckland" style="border: 0" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-placeholder"></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Reservations</title>
+    <script>
+        $(function () {
+        $(".header-placeholder").load("nav.html");
+      });
+      $(function () {
+        $(".footer-placeholder").load("footer.html");
+      });
+    </script>
+</head>
+<body>
+    <div class="flex-container">
+        <header>
+            <div class="header-placeholder"></div>
+        </header>
+        <section class="banner" id="banner">
+            <h1>Make a Reservation</h1>
+            <img src="./images/foodTable.jpg" alt="">
+        </section>
+        <main>
+            <br>
+            <form>
+                <div class="form-group">
+                    <h3 class="text-center" >Reservation <span>Form</span></h3>
+                    <br>
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="First & last name"
+                        required
+                    />
+                    </div>
+                    <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Email address"
+                        required
+                    />
+                    </div>
+                    <div class="form-group">
+                    <label id="date-label" for="date"
+                        >Date<span class="clue"></span></label
+                    >
+                    <input
+                        type="date"
+                        name="size"
+                        id="date"       
+                        class="form-control"
+                    />
+                    </div>
+                    <div class="form-group">
+                    <label id="number-label" for="number"
+                        >Party size<span class="clue">(optional)</span></label
+                    >
+                    <input
+                        type="number"
+                        name="size"
+                        id="number"
+                        min="1"
+                        max="99"
+                        class="form-control"
+                        placeholder="Party size"
+                    />
+                    </div>   
+                    <div class="form-group">
+                    <p>Seating preference</p>
+                    <label>
+                        <input
+                        name="user-recommend"
+                        value="Table"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        />Table</label
+                    >
+                    <label>
+                        <input
+                        name="user-recommend"
+                        value="Private Room"
+                        type="radio"
+                        class="input-radio"
+                        />Private Room</label
+                    >
+                    <label>
+                        <input
+                        name="user-recommend"
+                        value="Outside"
+                        type="radio"
+                        class="input-radio"
+                        />Outside</label
+                    >
+                    </div>   
+
+                    <div class="form-group">
+                    <p>
+                        Dietary restrictions?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+
+                    <label
+                        ><input
+                        name="prefer"
+                        value="pescatarian"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Pescatarian</label
+                    >
+                    <label>
+                        <input
+                        name="prefer"
+                        value="vgetarian"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Vegetarian</label
+                    >
+                    <label
+                        ><input
+                        name="prefer"
+                        value="vegan"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Vegan</label
+                    >
+                    <label
+                        ><input
+                        name="prefer"
+                        value="gluten"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Gluten Free</label
+                    >
+                    </div>
+                    <div class="form-group">
+                    <p>Special requests?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter any special requests(i.e. birthday, anniversary, etc.)"
+                    ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                    <button type="submit" id="submit" class="btn">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </main>   
+    </div>
+    <footer>
+        <div class="footer-placeholder"></div>
+    </footer> 
+</body>
+</html>
